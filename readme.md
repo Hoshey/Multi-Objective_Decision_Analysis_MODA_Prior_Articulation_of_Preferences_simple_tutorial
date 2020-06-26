@@ -25,12 +25,15 @@ The client sets goals or targets to each objective for seeking to minimize the l
 Specifically, the solution methods first elicit subjective information  from the client which is then utilized to find a preferred solution.
 
 - Weighting Method
+
 These objectives, which represent both over and under achievement of goals, reflect the relative importance of the weighted of the client. 
 
 - Compromise Programming
+
 Optimize these single-objective, and then shrink the range by solving these different single-objective.
 
 - Sequential Method
+
 Solve the first objective function and then the second one. But if only unique solution from the previous objective, it is meaningless for follow-up.
 
 
