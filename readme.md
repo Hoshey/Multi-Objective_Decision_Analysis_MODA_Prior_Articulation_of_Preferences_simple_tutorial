@@ -1,93 +1,51 @@
-﻿1.Background and Motivation(motivation, background, or problem definition)
+### 1.Background and Motivation
 
-Multiple  objective  solution  methods  vary  according  to  the 
-characteristics  of  the  problem  formulation  (e.g.,  linear  or non - linear  and  size) 
-useful classification  of  methods  according  to  the  timing  of  the information  provided below.  
+In real life, everyone may face many choices to choose, but trying to optimize multiple functions. 
 
+therefore, according to the problem function, there are many multiple objective solution methods.
 
-1. priori  before  solution 
-2. progressively  during  solution
-3. posteriori  after  solution. 
+Here below are useful classifications, according to the timing of the information provided.  
 
-according  to  the  quantity  of information  provided, 
-A  different  approach  is  taken
-The  solution  methods  in  this  category  first  elicit subjective  information  
-from  the  client  which  is  then  utilized  to find  a  preferred  solution. 
+-1.Prior Articulation of Preferences (before solution)
+-2.Progressive Articulation of Preferences (during solution)
+-3.Posterior Articulation of Preferences (after solution)
+-4.No Preference Information
 
-
-Specifically, the  client  assigns  a  goal  or  target  to  each  objective  and  then 
-seeks  to  minimize  the  deviations  from  each  goal.  
-
-These deviations,  which  represent  both  over  and  under  achievement of  goals,  
-are  then  weighted  the  DM  so  as  to  reflect  their relative  importance. 
-
-The  deviational  weights  and  can  be  either pre-emptive,  
-in  which  case  goals  of  higher  priority  must  be fully  satisfied  
-before  lower  priority  goals  are  considered: or  additive,  
-whereby  all  goals  are  at  the  same  priority  level and  considered  simultaneously.  
-Combinations  of  these  two cases  are  also  possible,  
-
-e.g.,  using  additive  weights  among three  objectives  which  all  have  the  same  priority.  
-The informational  burden  placed  on  our side  is  to  specify  two  types of  information  
-for  each  objective  before  solution. 
-
-pre-emptive  weights  imply  that  since  one  objective  
-must  be  fully  satisfied  before  a  second  objective  is even  considered,  the  is  infinite.  
-No  amount  of inducement  will  convince  the  client  to  sacrifice  some  of  objective  
-
-This  can  be  multiplied  through  and  deviational  variables added  to  give where  minimization  of  the  deviations  will  seek  to  achieve  the desired  liquidity  ratio.  
+A different timing  of information  provided, A different approach Preferences  is  taken.
 
 
 
-here we have a simple problem to solve.
+### 2. Methodology For Prior Articulation of Preferences
 
-we need to decide which one of the 3 plan to take. hence, we use 5 characteristics to evaluate each plan's score.
+The client sets goals or targets to each objective for seeking to minimize the loss from each goal.
 
-A -> 2+4+3+5+3
-B -> 4+3+4+5+4
-C -> 5+2+5+5+4
+Specifically, the solution methods first elicit subjective information  from the client which is then utilized to find a preferred solution.
 
-
-
-2. Methodology
 -Weighting Method
-
+These objectives, which represent both over and under achievement of goals, reflect the relative importance of the weighted of the client. 
 
 -Compromise Programming
-Minimize the distance from solution to ideal point 
-That is, we solve the optimization model with single-objective
-function first!
+Optimize these single-objective, and then shrink the range by solving these different single-objective.
 
 - Sequential (Priority) Method/ Preemptive Optimization
-Disadvantage: If solving previous objective gives unique
-solution, to solve follow-up objectives is meaningless.
-
-according  to  the  quantity  of information  provided, A  different  approach  is  taken
-The  solution  methods  in  this  category  first  elicit subjective  information  from  the  client  which  is  then  utilized  to find  a  preferred  solution. 
+Solve the first objective function and then the second one. But if only unique solution from the previous objective, it is meaningless for follow-up.
 
 
-Specifically, the  client  assigns  a  goal  or  target  to  each  objective  and  then seeks  to  minimize  the  deviations  from  each  goal.  These deviations,  which  represent  both  over  and  under  achievement of  goals,  are  then  weighted  the  DM  so  as  to  reflect  their relative  importance. 
+### 3. Example
 
-The  deviational  weights  and  can  be  either pre-emptive,  in  which  case  goals  of  higher  priority  must  be fully  satisfied  before  lower  priority  goals  are  considered: or  additive,  whereby  all  goals  are  at  the  same  priority  level and  considered  simultaneously.  Combinations  of  these  two cases  are  also  possible,  e.g.,  using  additive  weights  among three  objectives  which  all  have  the  same  priority.  The informational  burden  placed  on  our side  is  to  specify  two  types of  information  for  each  objective  before  solution. 
+see the ipynb.
 
-pre-emptive  weights  imply  that  since  one  objective  f. 
-must  be  fully  satisfied  before  a  second  objective  is even  considered,  the  is  infinite.  No  amount  of inducement  will  convince  the  OM  to  sacrifice  some  of  f.  
+### 4. Comments
 
-This  can  be  multiplied  through  and  deviational  variables added  to  give where  minimization  of  the  deviations  will  seek  to  achieve  the desired  liquidity  ratio.  
-
-
-3. Example
-
-
-4. Comments
-
-client's opinion is the major pricinple which we should comfirm first
-however 
+Clients opinion is the major principle which we should confirm first.
+However, it's not really that the clients understand what they need clearly.
+The hardest point and also the core point is how to help our clients to define the main target(s) and the second target, and others.
+Hence, more possibly, we may not have the good prior articulation.
 
 
-5. reference
+### 5. reference
 
-1.Chia-Yen Lee. 2020. ORA_05_MODA
+[1].Chia-Yen Lee. 2020. ORA_05_MODA
 
-2.John Telfer Buchanan, University of Canterbury. 1985. SOLUTION METHODS FOR MULTIPLE  OBJECTIVE 
+[2].John Telfer Buchanan, University of Canterbury. 1985. SOLUTION METHODS FOR MULTIPLE  OBJECTIVE 
 DECISION  MODELS 
